@@ -149,99 +149,97 @@ class _FreezerDetailPageState extends State<FreezerDetailPage> {
         ),
         child: FlexibleSpaceBar(
           titlePadding: const EdgeInsets.only(left: 45, bottom: 8),
-          title: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                if (state.maybeWhen(
-                  loaded: (products) => products.isNotEmpty,
-                  orElse: () => false,
-                )) ...[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Icon(Icons.ac_unit, size: 16, color: Colors.blue[700]),
-                      const SizedBox(width: 4),
-                      Text(
-                        '${state.maybeWhen(loaded: (products) => products.length, orElse: () => 0)} ${AppLocalizations.of(context)!.products}',
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.blue[900],
+          title: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (state.maybeWhen(
+                loaded: (products) => products.isNotEmpty,
+                orElse: () => false,
+              )) ...[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Icon(Icons.ac_unit, size: 16, color: Colors.blue[700]),
+                    const SizedBox(width: 4),
+                    Text(
+                      '${state.maybeWhen(loaded: (products) => products.length, orElse: () => 0)} ${AppLocalizations.of(context)!.products}',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.blue[900],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 4),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    if (state.maybeWhen(
+                      loaded: (products) => products.any((p) => p.isExpired),
+                      orElse: () => false,
+                    ))
+                      Container(
+                        padding: const EdgeInsets.symmetric(vertical: 2),
+                        decoration: BoxDecoration(
+                          color: Colors.red[100],
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.red[300]!),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(Icons.warning,
+                                size: 14, color: Colors.red[700]),
+                            const SizedBox(width: 4),
+                            Text(
+                              '${state.maybeWhen(loaded: (products) => products.where((p) => p.isExpired).length, orElse: () => 0)} ${AppLocalizations.of(context)!.expired}',
+                              style: TextStyle(
+                                color: Colors.red[700],
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    if (state.maybeWhen(
+                      loaded: (products) =>
+                          products.any((p) => p.isExpiringSoon),
+                      orElse: () => false,
+                    )) ...[
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 2, horizontal: 4),
+                        decoration: BoxDecoration(
+                          color: Colors.orange[100],
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.orange[300]!),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(Icons.timer_outlined,
+                                size: 14, color: Colors.orange[700]),
+                            const SizedBox(width: 4),
+                            Text(
+                              '${state.maybeWhen(loaded: (products) => products.where((p) => p.isExpiringSoon).length, orElse: () => 0)} ${AppLocalizations.of(context)!.expiringSoon}',
+                              style: TextStyle(
+                                color: Colors.orange[700],
+                                fontSize: 12,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
-                  ),
-                  const SizedBox(height: 4),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      if (state.maybeWhen(
-                        loaded: (products) => products.any((p) => p.isExpired),
-                        orElse: () => false,
-                      ))
-                        Container(
-                          padding: const EdgeInsets.symmetric(vertical: 2),
-                          decoration: BoxDecoration(
-                            color: Colors.red[100],
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.red[300]!),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(Icons.warning,
-                                  size: 14, color: Colors.red[700]),
-                              const SizedBox(width: 4),
-                              Text(
-                                '${state.maybeWhen(loaded: (products) => products.where((p) => p.isExpired).length, orElse: () => 0)} ${AppLocalizations.of(context)!.expired}',
-                                style: TextStyle(
-                                  color: Colors.red[700],
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      if (state.maybeWhen(
-                        loaded: (products) =>
-                            products.any((p) => p.isExpiringSoon),
-                        orElse: () => false,
-                      )) ...[
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 2, horizontal: 4),
-                          decoration: BoxDecoration(
-                            color: Colors.orange[100],
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.orange[300]!),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(Icons.timer_outlined,
-                                  size: 14, color: Colors.orange[700]),
-                              const SizedBox(width: 4),
-                              Text(
-                                '${state.maybeWhen(loaded: (products) => products.where((p) => p.isExpiringSoon).length, orElse: () => 0)} ${AppLocalizations.of(context)!.expiringSoon}',
-                                style: TextStyle(
-                                  color: Colors.orange[700],
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ],
-                  ),
-                ],
+                  ],
+                ),
               ],
-            ),
+            ],
           ),
         ),
       ),
