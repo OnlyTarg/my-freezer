@@ -1,0 +1,241 @@
+{
+  "@@locale": "en",
+  "settings": "Settings",
+  "@settings": {
+    "description": "Title for the settings page."
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Label for language selection."
+  },
+  "myFreezers": "My Freezers",
+  "@myFreezers": {
+    "description": "Title for the freezers list page."
+  },
+  "addProduct": "Add Product",
+  "@addProduct": {
+    "description": "Title for the add product dialog."
+  },
+  "editProduct": "Edit Product",
+  "@editProduct": {
+    "description": "Title for the edit product dialog."
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Label for cancel button."
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Label for save button."
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Label for name field."
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Label for description field."
+  },
+  "category": "Category",
+  "@category": {
+    "description": "Label for category field."
+  },
+  "dateAdded": "Date Added",
+  "@dateAdded": {
+    "description": "Label for date added field."
+  },
+  "recommendedShelfLife": "Recommended Shelf Life (days)",
+  "@recommendedShelfLife": {
+    "description": "Label for recommended shelf life field."
+  },
+  "selectDateAdded": "Select Date Added",
+  "@selectDateAdded": {
+    "description": "Label for date picker."
+  },
+  "noProductsFound": "No products found",
+  "@noProductsFound": {
+    "description": "Message shown when no products are found."
+  },
+  "deleteProduct": "Delete Product",
+  "@deleteProduct": {
+    "description": "Title for delete product confirmation dialog."
+  },
+  "deleteProductConfirm": "Are you sure you want to delete \"{product}\"?",
+  "@deleteProductConfirm": {
+    "description": "Confirmation message for deleting a product. {product} is the product name.",
+    "placeholders": {
+      "product": {}
+    }
+  },
+  "expired": "Expired",
+  "@expired": {
+    "description": "Label for expired status."
+  },
+  "expiringSoon": "Expiring Soon",
+  "@expiringSoon": {
+    "description": "Label for expiring soon status."
+  },
+  "sortProducts": "Sort Products",
+  "@sortProducts": {
+    "description": "Label for sort products button."
+  },
+  "filterProducts": "Filter Products",
+  "@filterProducts": {
+    "description": "Label for filter products button."
+  },
+  "all": "All",
+  "@all": {
+    "description": "Label for all filter option."
+  },
+  "status": "Status",
+  "@status": {
+    "description": "Label for status field."
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Label for add button."
+  },
+  "gallery": "Gallery",
+  "@gallery": {
+    "description": "Label for gallery option."
+  },
+  "takePhoto": "Take Photo",
+  "@takePhoto": {
+    "description": "Label for take photo option."
+  },
+  "addFreezer": "Add Freezer",
+  "@addFreezer": {
+    "description": "Title for add freezer dialog."
+  },
+  "editFreezer": "Edit Freezer",
+  "@editFreezer": {
+    "description": "Title for edit freezer dialog."
+  },
+  "deleteFreezer": "Delete Freezer",
+  "@deleteFreezer": {
+    "description": "Title for delete freezer confirmation dialog."
+  },
+  "deleteFreezerConfirm": "Are you sure you want to delete \"{freezer}\"?",
+  "@deleteFreezerConfirm": {
+    "description": "Confirmation message for deleting a freezer. {freezer} is the freezer name.",
+    "placeholders": {
+      "freezer": {}
+    }
+  },
+  "noFreezersYet": "No freezers yet",
+  "@noFreezersYet": {
+    "description": "Message shown when no freezers exist."
+  },
+  "addFirstFreezer": "Add your first freezer to start organizing",
+  "@addFirstFreezer": {
+    "description": "Message prompting to add first freezer."
+  },
+  "nameRequired": "Name is required",
+  "@nameRequired": {
+    "description": "Error message when name is empty."
+  },
+  "productDetails": "Product Details",
+  "@productDetails": {
+    "description": "Title for product details page."
+  },
+  "expiresToday": "Expires today",
+  "@expiresToday": {
+    "description": "Message shown when product expires today."
+  },
+  "expiresInDays": "Expires in {days} days",
+  "@expiresInDays": {
+    "description": "Message showing how many days until expiry. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "expiredDaysAgo": "Expired {days} days ago",
+  "@expiredDaysAgo": {
+    "description": "Message showing how many days ago the product expired. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "goodForDays": "Good for {days} days",
+  "@goodForDays": {
+    "description": "Message showing how many days the product is still good for. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "sortByNameAsc": "Name (A to Z)",
+  "@sortByNameAsc": {
+    "description": "Label for sorting by name ascending."
+  },
+  "sortByNameDesc": "Name (Z to A)",
+  "@sortByNameDesc": {
+    "description": "Label for sorting by name descending."
+  },
+  "sortByDateAddedAsc": "Date Added (Oldest First)",
+  "@sortByDateAddedAsc": {
+    "description": "Label for sorting by date added ascending."
+  },
+  "sortByDateAddedDesc": "Date Added (Newest First)",
+  "@sortByDateAddedDesc": {
+    "description": "Label for sorting by date added descending."
+  },
+  "sortByExpiryAsc": "Shelf Life (Shortest First)",
+  "@sortByExpiryAsc": {
+    "description": "Label for sorting by expiry date ascending."
+  },
+  "sortByExpiryDesc": "Shelf Life (Longest First)",
+  "@sortByExpiryDesc": {
+    "description": "Label for sorting by expiry date descending."
+  },
+  "error": "Error: {message}",
+  "@error": {
+    "description": "Error message with details. {message} is the error text.",
+    "placeholders": {
+      "message": {}
+    }
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Label for edit button."
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Label for delete button."
+  },
+  "days": "days",
+  "@days": {
+    "description": "Label for days unit."
+  },
+  "products": "Products",
+  "@products": {
+    "description": "Label for products count."
+  },
+  "searchProducts": "Search products...",
+  "@searchProducts": {
+    "description": "Hint text for product search field."
+  },
+  "english": "English",
+  "@english": {
+    "description": "Label for English language."
+  },
+  "ukrainian": "Ukrainian",
+  "@ukrainian": {
+    "description": "Label for Ukrainian language."
+  },
+  "russian": "Russian",
+  "@russian": {
+    "description": "Label for Russian language."
+  },
+  "productDeleted": "{product} deleted",
+  "@productDeleted": {"description": "Snackbar message when a product is deleted.", "placeholders": {"product": {}}},
+  "undo": "Undo",
+  "@undo": {"description": "Label for undo action in snackbar."},
+  "freezerNotFound": "Freezer not found",
+  "@freezerNotFound": {"description": "Snackbar message when freezer is not found."},
+  "errorSavingImage": "Error saving image: {error}",
+  "@errorSavingImage": {"description": "Error message for saving image.", "placeholders": {"error": {}}},
+  "errorPickingImage": "Error picking image: {error}",
+  "@errorPickingImage": {"description": "Error message for picking image.", "placeholders": {"error": {}}},
+  "camera": "Camera",
+  "@camera": {"description": "Label for camera button."}
+} 

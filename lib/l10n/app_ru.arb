@@ -1,0 +1,241 @@
+{
+  "@@locale": "ru",
+  "settings": "Настройки",
+  "@settings": {
+    "description": "Title for the settings page."
+  },
+  "language": "Язык",
+  "@language": {
+    "description": "Label for language selection."
+  },
+  "myFreezers": "Мои морозильники",
+  "@myFreezers": {
+    "description": "Title for the freezers list page."
+  },
+  "addProduct": "Добавить продукт",
+  "@addProduct": {
+    "description": "Title for the add product dialog."
+  },
+  "editProduct": "Редактировать продукт",
+  "@editProduct": {
+    "description": "Title for the edit product dialog."
+  },
+  "cancel": "Отмена",
+  "@cancel": {
+    "description": "Label for cancel button."
+  },
+  "save": "Сохранить",
+  "@save": {
+    "description": "Label for save button."
+  },
+  "name": "Название",
+  "@name": {
+    "description": "Label for name field."
+  },
+  "description": "Описание",
+  "@description": {
+    "description": "Label for description field."
+  },
+  "category": "Категория",
+  "@category": {
+    "description": "Label for category field."
+  },
+  "dateAdded": "Добавлено",
+  "@dateAdded": {
+    "description": "Label for date added field."
+  },
+  "recommendedShelfLife": "Рекомендуемый срок хранения (дней)",
+  "@recommendedShelfLife": {
+    "description": "Label for recommended shelf life field."
+  },
+  "selectDateAdded": "Выберите дату добавления",
+  "@selectDateAdded": {
+    "description": "Label for date picker."
+  },
+  "noProductsFound": "Продукты не найдены",
+  "@noProductsFound": {
+    "description": "Message shown when no products are found."
+  },
+  "deleteProduct": "Удалить продукт",
+  "@deleteProduct": {
+    "description": "Title for delete product confirmation dialog."
+  },
+  "deleteProductConfirm": "Вы уверены, что хотите удалить \"{product}\"?",
+  "@deleteProductConfirm": {
+    "description": "Confirmation message for deleting a product. {product} is the product name.",
+    "placeholders": {
+      "product": {}
+    }
+  },
+  "expired": "Просрочено",
+  "@expired": {
+    "description": "Label for expired status."
+  },
+  "expiringSoon": "Скоро закончится",
+  "@expiringSoon": {
+    "description": "Label for expiring soon status."
+  },
+  "sortProducts": "Сортировать продукты",
+  "@sortProducts": {
+    "description": "Label for sort products button."
+  },
+  "filterProducts": "Фильтровать продукты",
+  "@filterProducts": {
+    "description": "Label for filter products button."
+  },
+  "all": "Все",
+  "@all": {
+    "description": "Label for all filter option."
+  },
+  "status": "Статус",
+  "@status": {
+    "description": "Label for status field."
+  },
+  "add": "Добавить",
+  "@add": {
+    "description": "Label for add button."
+  },
+  "gallery": "Галерея",
+  "@gallery": {
+    "description": "Label for gallery option."
+  },
+  "takePhoto": "Сделать фото",
+  "@takePhoto": {
+    "description": "Label for take photo option."
+  },
+  "addFreezer": "Добавить морозильник",
+  "@addFreezer": {
+    "description": "Title for add freezer dialog."
+  },
+  "editFreezer": "Редактировать морозильник",
+  "@editFreezer": {
+    "description": "Title for edit freezer dialog."
+  },
+  "deleteFreezer": "Удалить морозильник",
+  "@deleteFreezer": {
+    "description": "Title for delete freezer confirmation dialog."
+  },
+  "deleteFreezerConfirm": "Вы уверены, что хотите удалить \"{freezer}\"?",
+  "@deleteFreezerConfirm": {
+    "description": "Confirmation message for deleting a freezer. {freezer} is the freezer name.",
+    "placeholders": {
+      "freezer": {}
+    }
+  },
+  "noFreezersYet": "Еще нет морозильников",
+  "@noFreezersYet": {
+    "description": "Message shown when no freezers exist."
+  },
+  "addFirstFreezer": "Добавьте свой первый морозильник, чтобы начать организовывать",
+  "@addFirstFreezer": {
+    "description": "Message prompting to add first freezer."
+  },
+  "nameRequired": "Название обязательно",
+  "@nameRequired": {
+    "description": "Error message when name is empty."
+  },
+  "productDetails": "Детали продукта",
+  "@productDetails": {
+    "description": "Title for product details page."
+  },
+  "expiresToday": "Заканчивается сегодня",
+  "@expiresToday": {
+    "description": "Message shown when product expires today."
+  },
+  "expiresInDays": "Заканчивается через {days} дней",
+  "@expiresInDays": {
+    "description": "Message showing how many days until expiry. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "expiredDaysAgo": "Просрочено {days} дней назад",
+  "@expiredDaysAgo": {
+    "description": "Message showing how many days ago the product expired. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "goodForDays": "Годен еще {days} дней",
+  "@goodForDays": {
+    "description": "Message showing how many days the product is still good for. {days} is the number of days.",
+    "placeholders": {
+      "days": {}
+    }
+  },
+  "sortByNameAsc": "Название (А-Я)",
+  "@sortByNameAsc": {
+    "description": "Label for sorting by name ascending."
+  },
+  "sortByNameDesc": "Название (Я-А)",
+  "@sortByNameDesc": {
+    "description": "Label for sorting by name descending."
+  },
+  "sortByDateAddedAsc": "Дата добавления (сначала старые)",
+  "@sortByDateAddedAsc": {
+    "description": "Label for sorting by date added ascending."
+  },
+  "sortByDateAddedDesc": "Дата добавления (сначала новые)",
+  "@sortByDateAddedDesc": {
+    "description": "Label for sorting by date added descending."
+  },
+  "sortByExpiryAsc": "Срок хранения (сначала короткие)",
+  "@sortByExpiryAsc": {
+    "description": "Label for sorting by expiry date ascending."
+  },
+  "sortByExpiryDesc": "Срок хранения (сначала длинные)",
+  "@sortByExpiryDesc": {
+    "description": "Label for sorting by expiry date descending."
+  },
+  "error": "Ошибка: {message}",
+  "@error": {
+    "description": "Error message with details. {message} is the error text.",
+    "placeholders": {
+      "message": {}
+    }
+  },
+  "edit": "Редактировать",
+  "@edit": {
+    "description": "Label for edit button."
+  },
+  "delete": "Удалить",
+  "@delete": {
+    "description": "Label for delete button."
+  },
+  "days": "дней",
+  "@days": {
+    "description": "Label for days unit."
+  },
+  "products": "Продукты",
+  "@products": {
+    "description": "Label for products count."
+  },
+  "searchProducts": "Поиск продуктов...",
+  "@searchProducts": {
+    "description": "Hint text for product search field."
+  },
+  "english": "Английский",
+  "@english": {
+    "description": "Label for English language."
+  },
+  "ukrainian": "Украинский",
+  "@ukrainian": {
+    "description": "Label for Ukrainian language."
+  },
+  "russian": "Русский",
+  "@russian": {
+    "description": "Label for Russian language."
+  },
+  "productDeleted": "{product} удалён",
+  "@productDeleted": {"description": "Snackbar message when a product is deleted.", "placeholders": {"product": {}}},
+  "undo": "Отменить",
+  "@undo": {"description": "Label for undo action in snackbar."},
+  "freezerNotFound": "Морозильник не найден",
+  "@freezerNotFound": {"description": "Snackbar message when freezer is not found."},
+  "errorSavingImage": "Ошибка сохранения изображения: {error}",
+  "@errorSavingImage": {"description": "Error message for saving image.", "placeholders": {"error": {}}},
+  "errorPickingImage": "Ошибка выбора изображения: {error}",
+  "@errorPickingImage": {"description": "Error message for picking image.", "placeholders": {"error": {}}},
+  "camera": "Камера",
+  "@camera": {"description": "Label for camera button."}
+} 
