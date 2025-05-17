@@ -237,5 +237,13 @@
   "errorPickingImage": "Помилка вибору зображення: {error}",
   "@errorPickingImage": {"description": "Error message for picking image.", "placeholders": {"error": {}}},
   "camera": "Камера",
-  "@camera": {"description": "Label for camera button."}
+  "@camera": {"description": "Label for camera button."},
+  "privacyPolicy": "Політика конфіденційності",
+  "@privacyPolicy": {
+    "description": "Title for the privacy policy page."
+  },
+  "legal": "Правова інформація",
+  "@legal": {
+    "description": "Title for the legal section in settings."
+  }
 } 

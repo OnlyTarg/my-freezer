@@ -237,5 +237,13 @@
   "errorPickingImage": "Error picking image: {error}",
   "@errorPickingImage": {"description": "Error message for picking image.", "placeholders": {"error": {}}},
   "camera": "Camera",
-  "@camera": {"description": "Label for camera button."}
+  "@camera": {"description": "Label for camera button."},
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Title for the privacy policy page."
+  },
+  "legal": "Legal",
+  "@legal": {
+    "description": "Title for the legal section in settings."
+  }
 } 

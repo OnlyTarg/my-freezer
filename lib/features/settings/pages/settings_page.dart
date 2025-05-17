@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:my_freezer/core/config/app_router.dart';
 import 'package:provider/provider.dart';
 import '../../../core/services/locale_service.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -86,6 +87,45 @@ class SettingsPage extends StatelessWidget {
                       'ru',
                       currentLocale == 'ru',
                       () => localeService.setLocale('ru'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            Card(
+              elevation: 0,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: BorderSide(color: theme.colorScheme.outline),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l10n.legal,
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: theme.colorScheme.onSurface,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: Icon(Icons.privacy_tip,
+                          color: theme.colorScheme.primary),
+                      title: Text(
+                        l10n.privacyPolicy,
+                        style: theme.textTheme.bodyLarge?.copyWith(
+                          color: theme.colorScheme.onSurface,
+                        ),
+                      ),
+                      trailing: Icon(Icons.chevron_right,
+                          color: theme.colorScheme.onSurfaceVariant),
+                      onTap: () =>
+                          context.router.push(const PrivacyPolicyRoute()),
                     ),
                   ],
                 ),
