@@ -1,7 +1,7 @@
 name: my_freezer
 description: "Мобільний додаток для керування продуктами у морозильній камері. Відстежуйте терміни зберігання, організовуйте продукти за категоріями та отримуйте сповіщення про терміни придатності."
 publish_to: 'none'
-version: 1.0.0+2
+version: 1.0.1+1
 
 # Flutter Launcher Icons configuration
 flutter_launcher_icons:
