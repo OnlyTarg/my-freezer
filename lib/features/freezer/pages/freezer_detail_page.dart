@@ -397,7 +397,7 @@ class _FreezerDetailPageState extends State<FreezerDetailPage> {
                         false;
                   },
                   onDismissed: (direction) {
-                    cubit.deleteProduct(product.id);
+                    cubit.deleteProduct(product.id, widget.freezerId);
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text('${product.name} deleted'),

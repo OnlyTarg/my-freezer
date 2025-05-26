@@ -104,12 +104,10 @@ class PrivacyPolicyPage extends StatelessWidget {
                 'We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.',
               ),
               _buildSection(
-                context,
-                'Contact Us',
-                'If you have any questions about this Privacy Policy, please contact us at:\n\n'
-                    '• Email: support@myfreezer.app\n'
-                    '• Website: https://myfreezer.app',
-              ),
+                  context,
+                  'Contact Us',
+                  'If you have any questions about this Privacy Policy, please contact us at:\n\n'
+                      '• Email: onlytarg@gmail.com'),
               _buildSection(
                 context,
                 'Compliance',

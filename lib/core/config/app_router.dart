@@ -5,7 +5,6 @@ import '../../features/freezer/pages/freezer_detail_page.dart';
 import '../../features/product/pages/product_detail_page.dart';
 import '../../features/settings/pages/settings_page.dart';
 import '../../features/settings/privacy_policy_screen.dart';
-import '../transitions/fade_page_route.dart';
 
 part 'app_router.gr.dart';
 
@@ -21,42 +20,18 @@ class AppRouter extends _$AppRouter {
         CustomRoute(
           path: '/freezer/:freezerId',
           page: FreezerDetailRoute.page,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadePageRoute(
-              child: child,
-              duration: const Duration(milliseconds: 300),
-            ).buildTransitions(context, animation, secondaryAnimation, child);
-          },
         ),
         CustomRoute(
           path: '/product/:productId',
           page: ProductDetailRoute.page,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadePageRoute(
-              child: child,
-              duration: const Duration(milliseconds: 300),
-            ).buildTransitions(context, animation, secondaryAnimation, child);
-          },
         ),
         CustomRoute(
           path: '/settings',
           page: SettingsRoute.page,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadePageRoute(
-              child: child,
-              duration: const Duration(milliseconds: 300),
-            ).buildTransitions(context, animation, secondaryAnimation, child);
-          },
         ),
         CustomRoute(
           path: '/privacy-policy',
           page: PrivacyPolicyRoute.page,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadePageRoute(
-              child: child,
-              duration: const Duration(milliseconds: 300),
-            ).buildTransitions(context, animation, secondaryAnimation, child);
-          },
         ),
       ];
 }

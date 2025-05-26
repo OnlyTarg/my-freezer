@@ -43,6 +43,7 @@ class _MainAppState extends State<MainApp> {
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             themeMode: _themeMode,
+            debugShowCheckedModeBanner: false,
             routerDelegate: _appRouter.delegate(),
             routeInformationParser: _appRouter.defaultRouteParser(),
             routeInformationProvider: _appRouter.routeInfoProvider(),

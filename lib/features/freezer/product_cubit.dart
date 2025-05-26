@@ -21,7 +21,7 @@ class ProductCubit extends Cubit<ProductState> {
   Future<void> loadProducts(int freezerId) async {
     emit(const ProductState.loading());
     try {
-      final products = await _repository.getAllProducts();
+      final products = await _repository.getProductsByFreezerId(freezerId);
       emit(ProductState.loaded(products));
     } catch (e) {
       emit(ProductState.error(e.toString()));
@@ -31,8 +31,12 @@ class ProductCubit extends Cubit<ProductState> {
   Future<void> addProduct(Product product) async {
     emit(const ProductState.loading());
     try {
-      await _repository.addProduct(product);
-      final products = await _repository.getAllProducts();
+      final savedProduct = await _repository.addProduct(product);
+      if (savedProduct.freezer.value == null) {
+        throw Exception('Product freezer link is not set');
+      }
+      final products = await _repository
+          .getProductsByFreezerId(savedProduct.freezer.value!.id);
       emit(ProductState.loaded(products));
     } catch (e) {
       emit(ProductState.error(e.toString()));
@@ -42,19 +46,23 @@ class ProductCubit extends Cubit<ProductState> {
   Future<void> updateProduct(Product product) async {
     emit(const ProductState.loading());
     try {
-      await _repository.updateProduct(product);
-      final products = await _repository.getAllProducts();
+      final savedProduct = await _repository.updateProduct(product);
+      if (savedProduct.freezer.value == null) {
+        throw Exception('Product freezer link is not set');
+      }
+      final products = await _repository
+          .getProductsByFreezerId(savedProduct.freezer.value!.id);
       emit(ProductState.loaded(products));
     } catch (e) {
       emit(ProductState.error(e.toString()));
     }
   }
 
-  Future<void> deleteProduct(int productId) async {
+  Future<void> deleteProduct(int productId, int freezerId) async {
     emit(const ProductState.loading());
     try {
       await _repository.deleteProduct(productId);
-      final products = await _repository.getAllProducts();
+      final products = await _repository.getProductsByFreezerId(freezerId);
       emit(ProductState.loaded(products));
     } catch (e) {
       emit(ProductState.error(e.toString()));
